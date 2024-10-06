@@ -1,0 +1,34 @@
+<div class="container mt-4">
+    <h1 class="text-center">Angular Calculadora</h1>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <input type="text" class="form-control mb-3 text-right" [(ngModel)]="resultado" readonly>
+        <div class="row">
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('7')">7</button>
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('8')">8</button>
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('9')">9</button>
+          <button class="btn btn-secondary col-3" (click)="operacao('/')">/</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('4')">4</button>
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('5')">5</button>
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('6')">6</button>
+          <button class="btn btn-secondary col-3" (click)="operacao('*')">*</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('1')">1</button>
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('2')">2</button>
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('3')">3</button>
+          <button class="btn btn-secondary col-3" (click)="operacao('-')">-</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary col-3" (click)="adicionarNumero('0')">0</button>
+          <button class="btn btn-secondary col-3" (click)="limpar()">CE</button>
+          <button class="btn btn-danger col-3" (click)="calcular()">=</button>
+          <button class="btn btn-secondary col-3" (click)="operacao('+')">+</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  

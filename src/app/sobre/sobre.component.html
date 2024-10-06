@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="row align-items-center d-flex justify-content-center" *ngIf="screenSize >= 949">
+
+      <div class="col-md-2">
+        <p><strong>Turma:</strong> ADS0301M</p>
+        <p><strong>Turno:</strong> Manhã</p>
+        <p><strong>Unidade:</strong> Bonsucesso</p>
+      </div>
+
+
+      <div class="col-md-1">
+        <img src="./../../assets/eueu.png" class="img-fluid" alt="Foto do Aluno" style="width: 100px; height: auto;">
+      </div>
+
+
+      <div class="col-md-3">
+        <p><strong>Nome:</strong> Brenda Machado Tavares de Almeida</p>
+      </div>
+    </div>
+
+
+    <div class="row align-items-center" *ngIf="screenSize < 949">
+      <div class="col-12 text-center d-flex justify-content-between ">
+        <div>
+            <p><strong>Turma:</strong> ADS0301M</p>
+            <p><strong>Turno:</strong> Manhã</p>
+            <p><strong>Unidade:</strong> Bonsucesso</p>
+        </div>
+        <div><img src="./../../assets/eueu.png" class="img-fluid" alt="Foto do Aluno" style="width: 100px; height: auto;"></div>
+
+      </div>
+      <div class="text-center">
+          <p><strong>Nome:</strong> Brenda Machado Tavares de Almeida</p>
+      </div>
+    </div>
+  </div>
